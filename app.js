@@ -6,7 +6,7 @@ const cors = require('cors')
 const corsOptions = require('./utils/cors')
 
 // Router
-const postRouter = require('./routes/post')
+const postRouter = require('./router/post')
 // Controller
 const globalErrorHandler = require('./utils/globalError')
 const AppError = require('./utils/appError')

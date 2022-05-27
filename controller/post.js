@@ -1,5 +1,5 @@
 // Model
-const Post = require('../model/posts')
+const Post = require('../model/post')
 // Utils
 const ApiState = require('../utils/apiState')
 const catchAsync = require('../utils/catchAsync')
