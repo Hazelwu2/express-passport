@@ -49,8 +49,11 @@ const userSchema = new Schema({
       },
       message: '必須和密碼欄位相同'
     }
-  }
+  },
 
+  googleId: {
+    type: Number
+  }
 
 }, {
   versionKey: false,

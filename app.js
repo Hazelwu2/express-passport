@@ -7,6 +7,7 @@ const corsOptions = require('./utils/cors')
 
 // Router
 const postRouter = require('./router/post')
+const authRouter = require('./router/auth')
 // Controller
 const globalErrorHandler = require('./utils/globalError')
 const AppError = require('./utils/appError')
@@ -16,7 +17,8 @@ app.use(cors(corsOptions))
 app.use(express.json())
 
 // Router
-app.use('/api/v1/posts', postRouter)
+app.use('/posts', postRouter)
+app.use('/auth', authRouter)
 
 // 無此路由
 app.use('*', (req, res, next) => {
